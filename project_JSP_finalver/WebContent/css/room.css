@@ -1,0 +1,46 @@
+@charset "EUC-KR";
+
+#bthCh {
+	width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:70px;   
+    background:#ffffff;
+}
+
+#titlePic {
+	background-image: url("../images/pic2.gif");
+	background-size: cover;
+    border: 1px solid #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.roomTop {
+	background-color: silver;
+	text-align: center;
+}
+
+#mainTa {
+	width: 80%;
+}
+
+body {
+	margin-top: 20px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+
+
+
+
+
+

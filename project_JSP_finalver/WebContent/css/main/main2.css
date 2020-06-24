@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+
+body{
+	height= 1050px;
+	
+}
+
+.total{
+	height: 950px;
+	background-color: #FBEFF2;
+	
+	
+}
+.openmenu{
+	float:left;
+	
+}
+
+.indexbar{
+	
+	border: 1px;
+	border-radius: 15px;
+	float: left;
+	width: 20%;
+	height: 950px;
+	font-size: 50px;
+	text-align: center;
+	padding: inherit;
+	font-family: 'Gamja Flower', cursive;	
+	margin-top: 45px;
+	padding-top: 25px;
+	background-color: #FBEFF2;
+	
+   
+}
+
+.contents{
+	margin-left: 200px;
+	border: 1px;
+	float: left;
+	width: 1300px;
+	height: 950px;
+	background-color: white;
+	
+}
+.contentsitem1{
+
+	border: 1px;
+	height: 920px;
+	width: auto;
+
+	
+	
+}
+
+
+td {
+    text-align: center;
+    width: 325px;
+ }
+ 
+ 
+ 
+/* 슬라이드효과*/
+.indexbar {
+			height:100%;
+			width: 0;
+			position: fixed;
+			z-index:1;
+			top: 0;
+			left: 0;
+		
+			overflow-x: hidden;
+			transition:0.5s ease-in-out;
+			padding-top: 60px;
+		}
+		.sidenav div {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #fff;
+			display: block;
+			transition: 0.2s ease-in-out;
+		}
+		.sidenav div:hover, .offcanvas a:focus {
+			color: #000;
+		}
+		.closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px !important;
+			margin-left: 50px;
+		}
+		.openmenu:hover {
+			color:rgb(0,154,200);
+			transition:0.5s ease-in-out;
+		}
+		.openmenu {
+			font-size: 25px;
+			cursor:pointer;
+			transition:0.5s ease-in-out;
+		}
+		.openmenu > i {
+			font-size: 30px;
+		}
+		/* 미디어쿼리 적용 */
+		@media screen and (max-height:450px) {
+			.sidenav {
+				padding-top:15px;
+			}
+			.sidenav a {
+				font-size: 18px;
+			}
+		}
