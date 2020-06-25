@@ -12,6 +12,8 @@ String modify = "";
 
 
 
+
+
 if (id == null){
 	log = "<a href='../member/login.jsp'class='name'>로그인</a>";
 	join = "<a href='../member/join.jsp'class='join'>/회원가입</a>";

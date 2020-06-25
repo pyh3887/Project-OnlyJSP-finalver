@@ -42,7 +42,7 @@ ArrayList<mainListDto> list = (ArrayList<mainListDto>)datalist.selectguestlist()
 
 <%@include file="top2.jsp"%>
 
-<span class="openmenu" onclick='openNav()' id = 'mysidenav'><i class="fa fa-angle-double-left fa-5" aria-hidden="true"></i> open</span>
+
 	
  <div class="container" >
  

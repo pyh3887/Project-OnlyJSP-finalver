@@ -112,8 +112,8 @@
 	<tr>
 		<td>
 			<input type="hidden" name="rPri" value="<%= request.getParameter("rprice") %>">
+			<input type="hidden" name="room_no" value="<%= request.getParameter("no1") %>">
 			<input type="submit" value="예약하기">
-			<input type="hidden" name="no2" value="<%= request.getParameter("no1") %>">
 		</td>
 	</tr>
 </table>

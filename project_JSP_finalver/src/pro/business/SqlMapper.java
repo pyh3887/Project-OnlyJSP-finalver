@@ -17,7 +17,7 @@ public interface SqlMapper {
 	@Select("select * from gogek where gogek_id=#{gogek_id}")
 	public GogekDto selectDataPart(String id);
 	
-	@Insert("insert into gogek values(#{gogek_id}, #{gogek_passwd}, #{gogek_name}, #{gogek_tel},#{gogek_money})")
+	@Insert("insert into gogek values(#{gogek_id}, #{gogek_passwd}, #{gogek_name}, #{gogek_tel})")
 	public int insertData(GogekFormBean bean);
 	
 	@Update("update gogek set gogek_name=#{gogek_name}, gogek_tel=#{gogek_tel} where gogek_id=#{gogek_id}")

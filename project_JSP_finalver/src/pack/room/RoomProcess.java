@@ -90,7 +90,7 @@ public class RoomProcess {
 		return b;
 	}
 	
-	public boolean Updategro() {
+	public boolean Updategro(ReserveBean rbean) {
 		boolean b = false;
 		SqlSession sqlSession = factory.openSession();
 		
@@ -99,7 +99,7 @@ public class RoomProcess {
 			SqlMapperInter inter = (SqlMapperInter)sqlSession.getMapper(SqlMapperInter.class);
 			
 			
-				if(inter.Updatero(4) > 0) {
+				if(inter.Updatero(rbean) > 0) {
 					b = true;
 					sqlSession.commit();
 				

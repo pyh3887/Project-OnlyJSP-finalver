@@ -5,7 +5,7 @@
 <% 
 request.setCharacterEncoding("utf-8");
 %>
-
+<%@include file="../guest/top4.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,18 +31,21 @@ window.onload = function() {
 	</tr>
 	<tr>
 		<td colspan="2">
-			<%=request.getParameter("stDate") %> &nbsp;/&nbsp;
+			<%=request.getParameter("fromDate") %> &nbsp;/&nbsp;
 			<%=request.getParameter("toDate") %>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			가격
+			가격 
 		</td>
 		<td>
 			<%= request.getParameter("rPri") %>
+			<input type="hidden" name="enter_date" value="<%= request.getParameter("fromDate") %>"> 
+			<input type="hidden" name="out_date" value="<%= request.getParameter("toDate") %>">
 			<input type="hidden" name="pri" value="<%= request.getParameter("rPri") %>"> 
-			<input type="hidden" name="no3" value="<%= request.getParameter("no2") %>">
+			<input type="hidden" name="room_no" value="<%= request.getParameter("room_no") %>">
+			<input type="hidden" name="id" value="<%= (String)session.getAttribute("id") %>">
 		</td>
 	</tr>
 	<tr>

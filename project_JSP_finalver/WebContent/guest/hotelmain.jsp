@@ -42,7 +42,7 @@ ArrayList<mainListDto> list = (ArrayList<mainListDto>)datalist.selecthotellist()
 
 <%@include file="top2.jsp"%>
 
-<span class="openmenu" onclick='openNav()' id = 'openbtn'><i class="fa fa-angle-double-left fa-5" aria-hidden="true"></i> open</span>
+
 			
 
  <div class="container" >
