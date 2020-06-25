@@ -52,6 +52,8 @@ public class LodgingProcess {
 		return b;
 	}
 	public boolean insertData(LodgingFormBean bean) {
+		
+		System.out.println(bean.getLodging_no());
 		boolean b = false;
 		SqlSession sqlSession = factory.openSession();
 		System.out.println(bean.getLodging_name());
