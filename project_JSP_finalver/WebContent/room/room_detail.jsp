@@ -12,7 +12,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>예약</title>
 
 
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
@@ -77,46 +77,50 @@
 <body>
 
 <form action="room_pay.jsp" method="get" name="frde">
-<table id="mainTa" border="1">
-	<tr>
-		<td>
+<div class='container'>
+
+	<div class='row'>
+	<br>
+		<div class='col-md-offset-2 col-md-8'>
+			<img src="../upload/<%=a%>" style='width:750px;height:320px'>
+			<input type="hidden" name="lodging_img" value="<%=a%>">
+			<br>
 			<input type="hidden" name="rtowname" value="<%= request.getParameter("rname") %>">
-			<%= request.getParameter("rname") %>
-		</td>
-	</tr>
-	<tr id="titlePic">
-		<td>
-			<img src="../upload/<%=a%>">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			 <label for="fromDate">시작일</label>
+			<h2 style="text-align:center"><b><%= request.getParameter("rname") %></b></h2>
+		</div>
+		
+	</div>
+<br>
+	<div class='row'>
+		<div class='col-md-offset-2 col-md-8' style="text-align:center">
+			 <label for="fromDate" >시작일</label>
          	 <input type="text" name="fromDate" id="fromDate">
          	 ~
         	 <label for="toDate">종료일</label>
         	 <input type="text" name="toDate" id="toDate">			
 		
-		</td>
-	</tr>
-	<tr>
-		<td>
+		</div>
+	</div>
+	<br>
+	<div class='row'>
+		<div class='col-md-offset-2 col-md-8' style="text-align:center;font-size:20px">
 			<%= request.getParameter("rcont1") %>
-		</td>
-	</tr>
-	<tr>
-		<td>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-offset-2 col-md-8' style="text-align:center;font-size:20px">
 			<%= request.getParameter("rcont2") %>
-		</td>
-	</tr>
-	<tr>
-		<td>
+		</div>
+	</div>
+	<br>
+	<div class='row'>
+		<div class='col-md-offset-2 col-md-8'>
 			<input type="hidden" name="rPri" value="<%= request.getParameter("rprice") %>">
 			<input type="hidden" name="room_no" value="<%= request.getParameter("no1") %>">
-			<input type="submit" value="예약하기">
-		</td>
-	</tr>
-</table>
+			<input type="submit" value="예약하기" class='btn btn-danger btn-block'>
+		</div>
+	</div>
+</div>
 </form>
 </body>
 </html>

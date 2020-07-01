@@ -123,44 +123,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="span12">
-							<div class="menu">
-								<div class="accordion">
-									<div class="accordion-group">
-										<div class="accordion-heading country">
-											<a class="accordion-toggle" data-toggle="collapse"
-												href="#country2"><h4><%=dto.getGogek_id() %>님께서 작성하신 후기</h4></a>
-										</div>
-										<div id="country2" class="accordion-body collapse">
-											<div class="accordion-inner">
-												<table class="table table-striped table-condensed">
-													<thead>
-														<tr>
-															<th>숙소이름</th>
-															<th>글 내용</th>
-															<th>작성일</th>
-														
-														</tr>
-													</thead>
-													<tbody>
-														<c:forEach var="reserve" items="<%=list%>">
-															<tr>
-																<td>${reserve.room_name }</td>
-																<td>${reserve.enter_date }</td>
-																<td>${reserve.out_date}</td>
-																
-															</tr>
-														</c:forEach>
-													</tbody>
-												</table>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-
+						
 					</div>
 					<br> <input type="button" value="수정완료"
 						class="btn btn-primary btn-block" style="height: 50px; onclick="inputCheck()">
